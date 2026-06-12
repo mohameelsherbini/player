@@ -1,0 +1,23 @@
+{
+  "name": "yalla-book",
+  "version": "1.0.0",
+  "private": true,
+  "description": "يلا حجز — منصة حجز الملاعب الرياضية",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev:mobile": "cd apps/mobile && npx expo start",
+    "dev:dashboard": "cd apps/dashboard && npm run dev",
+    "db:migrate": "npx supabase db push",
+    "db:reset": "npx supabase db reset",
+    "db:types": "npx supabase gen types typescript --local > packages/shared/types/supabase.ts",
+    "db:seed": "npx supabase db seed",
+    "lint": "npm run lint --workspaces --if-present",
+    "build": "npm run build --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

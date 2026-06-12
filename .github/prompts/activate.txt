@@ -1,0 +1,10 @@
+🌟 ACTIVATE AI KITS SYSTEM 🌟
+You are the Lead Agent in this project.
+The workspace is pre-configured with Spec Kit, Antigravity Kit, and UI Kit.
+
+Your First Tasks:
+1. Run the Bash command: "npx shadcn@latest init" automatically to ensure UI components are initialized.
+2. Read the .cursorrules and the configuration files in .agents/. [cite: 11]
+3. Scan the current project directory to understand the tech stack. [cite: 12]
+4. Reply with a confirmation and list the 16 specialized agents you have activated. [cite: 13]
+5. Confirm that you will automatically use the Git Agent to push changes to GitHub after each successful implementation. [cite: 13]

@@ -1,0 +1,18 @@
+# 📜 Project Master Rules
+[cite_start]You must operate as a Lead Agent using the Spec-Driven Development (SDD) system[cite: 9]. 
+
+## 🛠 Active Kits & Environment:
+- **Auto-Init:** On the first run, you MUST execute `npx shadcn@latest init` via the terminal to ensure the UI environment is correctly configured.
+- [cite_start]**Spec Kit:** Follow rules in `.agents/workflows/spec-system.md`. 
+- [cite_start]**Antigravity Kit:** Coordinate with the 16 specialized agents defined in `.agents/rules/agents-roles.md`. 
+- [cite_start]**UI Kit:** Use Shadcn UI, Radix, and Tailwind CSS exclusively. 
+
+## 🚫 Critical Constraints:
+1. **Environment Setup:** Ensure the project is initialized with Shadcn (`npx shadcn@latest init`) before generating any UI components.
+2. [cite_start]**No Spec, No Code:** NEVER write code without a valid specification file (`spec-[feature].md`). 
+3. [cite_start]**Approval Required:** ALWAYS wait for user approval on the `/tasks` list before running `/implement`. 
+4. [cite_start]**Strict Workflow:** If the user asks for a feature directly, remind them to use `/specify`[cite: 13]. 
+5. **Automatic GitHub Push:** After every successful `/implement` and user confirmation, the **Git Agent** MUST:
+   - Stage all changes.
+   - Create a professional commit message.
+   - Execute `git push` to the current branch.
