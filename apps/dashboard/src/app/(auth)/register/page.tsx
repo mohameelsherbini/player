@@ -31,7 +31,7 @@ export default function RegisterPage() {
       if (data.user) {
         await supabase.from("users").update({ role: "admin" }).eq("id", data.user.id);
       }
-      router.push("/dashboard");
+      window.location.href = "/dashboard";
     }
   };
 
