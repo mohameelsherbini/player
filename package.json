@@ -4,7 +4,6 @@
   "private": true,
   "description": "يلا حجز — منصة حجز الملاعب الرياضية",
   "workspaces": [
-    "apps/*",
     "packages/*"
   ],
   "scripts": {
